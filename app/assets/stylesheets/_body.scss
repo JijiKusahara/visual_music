@@ -1,0 +1,107 @@
+.Main {
+  padding-top: 75px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 935px;
+  .left-box {
+//    background-color: tan;
+    float: left;
+    margin-right: 28px;
+
+    height: 100%;
+    width: 614px;
+    overflow: hidden;
+    padding-top: 75px;
+    &__colors-fild {
+      background-color: snow;
+      list-style: none;
+      display: flex;
+      margin-bottom: 2px;
+      .color-box {
+        background-color: steelblue;
+        height: 75px;
+        width: 75px;
+        margin-right: 2px;
+        border-radius: 10px;
+        &__last {
+          background-color: steelblue;
+          height: 75px;
+          width: 75px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .right-box {
+//    background-color: gold;
+    float: right;
+    height: 100vh;
+    width: 293px;
+    padding-top: 75px;
+    &__disc {
+      margin-bottom: 10px;
+      margin-top: 18px;
+      height: 56px;
+      background-color: rgb(206, 206, 206);
+      padding-left: 5px;
+    }
+    &__form-box {
+      background-color: rgb(218, 218, 218);
+      height: calc(100% - 84px);
+    }
+  }
+}
+.Nav {
+  .nav_box {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    height: 75px;
+    width: 100%;
+    top: 0;
+    &__logo-field {
+      padding: 0 20px;
+      height: 75px;
+      max-width: 975px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__logo {
+        width: 200px;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      &__right {
+        .menu-box {
+          list-style: none;
+          display: flex;
+          &__search {
+            position: relative;
+            .song-name__input {
+              font-size: 13px;
+              padding-left: 15px;
+              padding: 3px 10px 3px 26px;
+            }
+            .song-name__icon {
+              position: absolute;
+              left: 13px;
+              top: 9px;
+              font-size: 12px;
+              color: gainsboro;
+            }
+          }
+          &__disc {
+            margin-left: 30px;
+          }
+          &__movie {
+            margin-left: 30px;
+          }
+          &__login {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
