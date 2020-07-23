@@ -64,3 +64,6 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
   gem 'pg'
 end
 #本番環境にpg gemをインストールしてRailsがPostgreSQLと通信できるようにする
+
+gem 'devise'
+#ユーザー管理のため
