@@ -99,6 +99,10 @@
           }
           &__login {
             margin-left: 30px;
+            display: flex;
+            .userName {
+              margin-left: 5px;
+            }
           }
         }
       }
