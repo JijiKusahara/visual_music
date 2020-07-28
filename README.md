@@ -59,7 +59,7 @@ visual music
 |------|----|-------|
 |color|integer|null: false|
 |colorTitle|string|null: false|
-|comment|text||null: true|
+|comment|text|null: true|
 |user_id|integer|null: false, foreign_key: true|
 |song_id|integer|null: false, foreign_key: true|
 
