@@ -12,7 +12,12 @@ class SongsController < ApplicationController
     Song.create(song_params)
   end
 
+  def destroy
+    song = Song.find(params[:id])
+    song.destroy
+  end
 
+  
   private
 
   def song_params
