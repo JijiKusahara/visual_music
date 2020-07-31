@@ -72,3 +72,4 @@ gem "jquery-rails"
 
 gem 'pry-rails'
 #binding.pry使えるgem
+
