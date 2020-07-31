@@ -1,7 +1,3 @@
-.song_index
-  - @songs.each do |song|
-    %div
-      = song.name
-      = link_to '削除', song_path(song.id), method: :delete
-  %a.btn{:href => "/"} topへ戻る
-  = link_to "新規投稿", new_song_path, method: :get, class:"back-btn" 
+.wrapper
+  = render "body"
+  = render 'songcolor/header'

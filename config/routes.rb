@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   
   root "songcolor#index"
   resources :users, only: [:edit, :update]
-  resources :songs, only: [:index,:new,:create, :destroy]
+  resources :songs, only: [:index, :new, :create, :destroy]
+  resources :songcolor, only: [:new, :create]
 end
