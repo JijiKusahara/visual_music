@@ -1,7 +1,7 @@
 
 .Base
   .songForm
-    = form_with url: "/songs", method: :song, html: {class: "Form"}, local: true do |f|
+    = form_with url: "/songs", method: :post, html: {class: "Form"}, local: true do |f|
       .songForm__contents
         = f.text_field :name, class: 'songForm__input', placeholder: '曲名'
       = f.submit '送信', class: 'songForm__submit'
