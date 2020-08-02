@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  root "songcolor#index"
+  root "songs#index"
   resources :users, only: [:edit, :update]
-  resources :songs, only: [:index, :new, :create, :destroy]
-  resources :songcolor, only: [:new, :create]
+  resources :songs, only: [:new, :create, :destroy]
+  resources :songcolors, only: [:new, :create]
 end

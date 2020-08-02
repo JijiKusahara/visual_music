@@ -1,4 +1,13 @@
-%h3
-  投稿完了しました。
-.back
-  = link_to "一覧へもどる", songs_path, method: :get, class:"back-btn" 
+.SongCreate
+  .SongCreate__form
+    .cbase
+      .cbtn
+        %h3 投稿完了しました
+        = link_to "一覧へもどる", root_path, method: :get, class:"cback-btn" 
+
+= render 'songcolors/header' 
+
+
+
+
+

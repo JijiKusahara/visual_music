@@ -1,0 +1,27 @@
+.Base {
+  .Formbox {
+    width: 500px;
+    height: 340px;
+    background-color: #dadada;
+    margin: auto;
+    .inputcomment {
+      padding-top: 142px;
+    }
+    .songbase {
+      margin-top: 150px;
+      text-align: center;
+      .songForm {
+        padding-top: 12px;
+        .Form {
+          display: -webkit-inline-box;
+          .songForm__contents {
+
+          }
+          .songForm__submit {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
