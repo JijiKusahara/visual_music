@@ -9,7 +9,7 @@
             %input#menu-box__search__fild.song-name__input{placeholder: "search", type: "text"}/
             =icon('fas', 'search', class: 'song-name__icon')
           %li.menu-box__disc
-            = link_to songs_path, method: :get, class:"disc-btn" do
+            = link_to root_url, method: :get, class:"disc-btn" do
               = icon('fas', 'compact-disc')
               disc
           %li.menu-box__movie

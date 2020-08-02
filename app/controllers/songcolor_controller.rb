@@ -1,3 +1,0 @@
-class SongcolorController < ApplicationController
-
-end
