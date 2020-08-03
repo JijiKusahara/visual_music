@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root "songs#index"
   resources :users, only: [:edit, :update]
   resources :songs, only: [:new, :create, :destroy]
-  resources :songcolors, only: [:new, :create]
+  resources :songcolors, only: [:index, :new, :create]
 end
