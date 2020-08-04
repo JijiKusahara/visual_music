@@ -99,6 +99,8 @@
 
   %div.right-box
     .right-box__disc
+      お気に入りの曲を登録してください！
+      = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
     .right-box__form-box
       .song_index
         - @songs.each do |song|
@@ -107,4 +109,4 @@
             = link_to '削除', song_path(song.id), method: :delete
             -# エラー時はlink_toをbutton_toにかえるのも良い
         -# %a.btn{:href => "/"} topへ戻る
-        = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
+        -# = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
