@@ -4,10 +4,8 @@ class SongcolorsController < ApplicationController
 
   def index
     @songcolor = Songcolor.new
-    @songcolors = @song.songcolor.select("color")
-
-    # @songcolor = Song.find_by(id:params[:song_id])
-    # @songcolors = Songcolor.find_by(color: @songcolor.color)
+    @songid = Song.find(params[:song_id].to_s)
+    @songcolors = Songcolor.select("color","song_id").where(song_id: @songid)
   end
 
   def new
