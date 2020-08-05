@@ -32,7 +32,7 @@ class SongcolorsController < ApplicationController
   end
 
   def set_song
-    @song = Song.find(params[:song_id].to_s)
+    @song = Song.find(params[:song_id])
   end
 
 end
