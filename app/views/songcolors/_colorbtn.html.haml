@@ -1,7 +1,9 @@
 .Color
   .colorbtn
     .colorForm
+      .songName
+        song name：「#{@song.name}」
       = form_with model: [@song,@songcolor], url: {action: "create"}, html: {class: "cForm"}, local: true do |f|
         .colorForm__contents
           = f.color_field :color, id:"colorid", name:"color", class: 'colorForm__input'
-        = f.submit '送信', class: 'colorForm__submit'
+        = f.submit 'send', class: 'colorForm__submit'

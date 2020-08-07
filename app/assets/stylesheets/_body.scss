@@ -42,18 +42,62 @@
     padding-top: 75px;
     &__disc {
       margin-bottom: 10px;
-      margin-top: 18px;
-      height: 56px;
-      background-color: rgb(206, 206, 206);
-      padding-left: 5px;
+      margin-top: 0px;
+      height: 80px;
+      background-color: rgb(218, 218, 218);
+      padding-top: 27px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+      text-align: center;
     }
     &__form-box {
       background-color: rgb(218, 218, 218);
-      height: calc(100% - 84px);
+      // height: calc(100% - 84px);
+      // 曲が増えると背景が足りなくなる
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 30px;
+      .song_list {
+        padding-left: 46px;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .song_index {
+        .lists {
+          .Song-name {
+            margin-bottom: 5px;
+          }
+        }
+        form.button_to {
+          display: contents;
+        }
+        .delete-btn {
+          margin-left: 11px;
+          font-size: 15px;
+          border: none;
+          background-color: transparent;
+        }
+      }
     }
   }
 }
 
+// リンク下線削除
+a {
+  text-decoration: none;
+}
+
+// リンク下線削除
+.describe {
+    font-size: 11px;
+}
+
+// カラー投稿ページの説明文
+.howTo {
+  font-size: 13px;
+}
 
 .Nav {
   .nav_box {
@@ -117,7 +161,32 @@
     background-color: #dadada;
     height: 56px;
     width: 614px;
-    top: 88px;
-    left: 212px;
+    top: 85px;
+    left: 220px;
+    padding-left: 25px;
+    padding-right: 25px;
+    .colorForm {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 14px;
+      &__contents {
+        display: contents;
+      }
+      &__input#colorid {
+        width: 75px;
+      }
+      .cForm {
+        margin-top: 1px;
+      }
+      .songName {
+        font-size: 20px;
+      }
+    }
   }
 }
+
+// リンク先の色指定↓
+a {
+  color: #244765;
+  }
+  

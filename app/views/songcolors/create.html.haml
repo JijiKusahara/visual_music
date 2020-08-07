@@ -1,4 +1,11 @@
-%h3
-  色の投稿完了しました。
-.back
-  = link_to "一覧へもどる",  song_songcolors_path, method: :get, class:"back-btn" 
+.SongCreate
+  .SongCreate__form
+    .cbase
+      .cbtn
+        %h3 イメージカラーの投稿が完了しました
+        = link_to "一覧へもどる",  song_songcolors_path, method: :get, class:"back-btn"  
+
+= render 'songcolors/header' 
+
+
+-# songName投稿完了画面と同じクラス名にして、scssそのまま借りてきてる
