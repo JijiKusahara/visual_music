@@ -99,15 +99,22 @@
 
   %div.right-box
     .right-box__disc
-      お気に入りの曲を登録してください！
-      = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
+      = link_to "＞＞曲を登録する＜＜", new_song_path, method: :get, class:"back-btn"
     .right-box__form-box
+      .song_list
+        ：：song list：：
       .song_index
         - @songs.each do |song|
           = link_to song_songcolors_path(song),class: "lists" do
-            %div
-              = song.name
-              = link_to '削除', song_path(song.id), method: :delete
+            %div.Song-name
+              = "◉「#{song.name}」"
+              = button_to '×', song_path(song.id), method: :delete, class: "delete-btn"
               -# エラー時はlink_toをbutton_toにかえるのも良い
           -# %a.btn{:href => "/"} topへ戻る
           -# = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
+    %div
+    　
+    %div.describe
+      　※「×」ボタンを押す事で曲と曲情報
+    %div.describe
+      　を削除することができます。

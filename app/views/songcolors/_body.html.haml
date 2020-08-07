@@ -4,13 +4,29 @@
         
   %div.right-box
     .right-box__disc
+      ：：songcolor image page：：
     .right-box__form-box
-      -# .song_index
-      -#   - @songs.each do |song|
-      -#     %div
-      -#       = song.name
-      -#       = link_to '削除', song_path(song.id), method: :delete
-      -#       -# エラー時はlink_toをbutton_toにかえるのも良い
-      -#   -# %a.btn{:href => "/"} topへ戻る
-      -#   = link_to "新規投稿", new_song_path, method: :get, class:"back-btn"
+      %div
+        　【How to choose a color】
+      %div
+        　
+      %div.howTo
+        ・曲を聴いてイメージした色を
+      %div.howTo
+        　カラーピッカーで選択し、
+      %div.howTo
+        　sendボタンをクリックして
+      %div.howTo
+        　投稿してください。
+      %div.howTo
+        　
+      %div.howTo
+        ・四角いカラーパネルが表示され
+      %div.howTo
+        　曲のイメージカラーをみんなで
+      %div.howTo
+        　共有することが出来ます。
+      .song_index
 
+-# トップと同じグレーのboxが表示される。↑
+-# 挿入内容が決まれば再度表示

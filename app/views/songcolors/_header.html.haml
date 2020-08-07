@@ -2,7 +2,8 @@
   .nav_box
     .nav_box__logo-field
       .nav_box__logo-field__logo
-        VISUALmusic
+        = link_to root_url, method: :get do
+          VISUALmusic
       .nav_box__logo-field__right
         %lu.menu-box
           %li.menu-box__search
