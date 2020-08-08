@@ -1,5 +1,5 @@
 # README
-
+<!-- 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -21,7 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ... -->
 
 
 ## アプリ名 
@@ -31,6 +31,7 @@ visual music
 
 ## 🌐 App URL
 
+[visual music](https://visualmusicc.herokuapp.com/)
 
 ## 概要
 
@@ -53,15 +54,15 @@ visual music
 
 # DB設計
 
-## imagesテーブル
+## songcolorsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |color|integer|null: false|
 |colorTitle|string|null: false|
 |comment|text|null: true|
-|user_id|integer|null: false, foreign_key: true|
-|song_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|song_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :songs
@@ -76,7 +77,7 @@ visual music
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|song_id|integer||
+|song_id|references ||
 
 ### Association
 - has_many :images
@@ -89,8 +90,8 @@ visual music
 
 |Column|Type|Options|
 |------|----|-------|
-|users_id|integer||
-|song_id|integer||
+|user_id|references||
+|song_id|references||
 
 ### Association
 - belongs_to :users
@@ -102,7 +103,7 @@ visual music
 
 |Column|Type|Options|
 |------|----|-------|
-|song|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :images
@@ -112,12 +113,13 @@ visual music
 - has_many :discs, through: :songs_discs
 
 
+
 ## songs_discsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|song_id|integer||
-|disc_id|integer||
+|song_id|references||
+|disc_id|references||
 
 ### Association
 - belongs_to :songs
