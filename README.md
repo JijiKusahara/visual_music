@@ -30,7 +30,7 @@ Things you may want to cover:
 
 ## サイトのイメージ
   
-![トップページのイメージ](rootPage.png)  
+![トップページのイメージ](TopPage.png)  
   
 ## 🌐 App URL
   
@@ -54,10 +54,10 @@ Things you may want to cover:
 （ログインできない時は新規でご登録ください。）  
   
 ②曲名をと登録  
-![demo](https://gyazo.com/eb4dbd2f8cf8b42721dcc7c489a2da24)  
+![demo](https://gyazo.com/eb4dbd2f8cf8b42721dcc7c489a2da24/raw)  
   
 ③登録した曲名をクリックし、イメージカラーを登録できる。  
-![demo](https://gyazo.com/1042f8fd85b0caffa2b0815782f922d1)  
+![demo](https://gyazo.com/1042f8fd85b0caffa2b0815782f922d1/raw)  
   
   
   
