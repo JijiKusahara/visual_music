@@ -37,9 +37,10 @@ Things you may want to cover:
 [visual music](https://visualmusicc.herokuapp.com/)  
   
 ＊テスト用ログインユーザー＊  
-ユーザー名/tanaka  
-パスワード/１２３４５６７８  
   
+パスワード/１２３４５６７８ 
+Eメール／tanaka@sample.com
+ユーザー名/tanaka  
 新規登録もできますがこちらをご利用いただけますと幸いです。  
   
   
