@@ -38,8 +38,8 @@ Things you may want to cover:
   
 ＊テスト用ログインユーザー＊  
   
-パスワード/１２３４５６７８ 
-Eメール／tanaka@sample.com
+パスワード/１２３４５６７８  
+Eメール／tanaka@sample.com  
 ユーザー名/tanaka  
 新規登録もできますがこちらをご利用いただけますと幸いです。  
   
