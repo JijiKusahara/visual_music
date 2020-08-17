@@ -156,13 +156,14 @@ a {
 }
 
 .Color {
+  position: relative;
   .colorbtn {
-    position: fixed;
+    position: absolute;
     background-color: #dadada;
     height: 56px;
     width: 614px;
-    top: 85px;
-    left: 213px;
+    top: 47px;
+    left: -332px;
     padding-left: 25px;
     padding-right: 25px;
     .colorForm {
