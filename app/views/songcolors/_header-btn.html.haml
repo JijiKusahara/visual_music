@@ -4,6 +4,16 @@
       .nav_box__logo-field__logo
         = link_to root_url, method: :get do
           VISUALmusic
+      -# カラー送信ボタンあり
+      .Color
+        .colorbtn
+          .colorForm
+            .songName
+              song name：「#{@song.name}」
+            = form_with model: [@song,@songcolor], url: {action: "create"}, html: {class: "cForm"}, local: true do |f|
+              .colorForm__contents
+                = f.color_field :color, id:"colorid", name:"color", class: 'colorForm__input'
+              = f.submit 'send', class: 'colorForm__submit'
       .nav_box__logo-field__right
         %lu.menu-box
           %li.menu-box__search
