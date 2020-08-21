@@ -146,7 +146,7 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 
 
 
-## songs_discsテーブル
+## song_discsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
