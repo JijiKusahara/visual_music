@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'discs/create'
-  get 'discs/destroy'
-  get 'song_discs/create'
-  get 'song_discs/destroy'
   devise_for :users
   
   root "songs#index"
