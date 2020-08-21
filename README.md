@@ -97,8 +97,8 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 |song_id|references|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :songs
-- belongs_to :users
+- belongs_to :song
+- belongs_to :user
 
 
 
@@ -113,12 +113,12 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 
 ### Association
 - has_many :images
-- has_many :users_songs
-- has_many :songs, through: :users_songs
+- has_many :user_songs
+- has_many :songs, through: :user_songs
 
 
 
-## users_songsテーブル
+## user_songsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -126,8 +126,8 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 |song_id|references||
 
 ### Association
-- belongs_to :users
-- belongs_to :songs
+- belongs_to :user
+- belongs_to :song
 
 
 
@@ -139,10 +139,10 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 
 ### Association
 - has_many :images
-- has_many :users_songs
-- has_many :users, through: :users_songs
-- has_many :songs_discs
-- has_many :discs, through: :songs_discs
+- has_many :user_songs
+- has_many :users, through: :user_songs
+- has_many :song_discs
+- has_many :discs, through: :song_discs
 
 
 
@@ -154,7 +154,7 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 |disc_id|references||
 
 ### Association
-- belongs_to :songs
+- belongs_to :song
 - belongs_to :disc
 
 
@@ -166,5 +166,5 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 |disc|string|null: false|
 
 ### Association 
-- has_many :songs_discs
-- has_many :songs, through: :songs_discs
+- has_many :song_discs
+- has_many :songs, through: :song_discs
