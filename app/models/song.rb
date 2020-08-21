@@ -1,7 +1,8 @@
 class Song < ApplicationRecord
   has_many :songcolors, dependent: :destroy
-  # has_many :users_songs
-  # has_many :users, through: :users_songs
+
+  has_many :song_discs
+  has_many :discs, through: :song_discs
 
   validates :name, presence: true
 end
