@@ -3,6 +3,5 @@ class Song < ApplicationRecord
 
   has_many :song_discs
   has_many :discs, through: :song_discs
-
   validates :name, presence: true
 end

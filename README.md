@@ -163,7 +163,7 @@ VSCode,HTML/CSS, Ruby, Ruby on Rails
 
 |Column|Type|Options|
 |------|----|-------|
-|disc|string|null: false|
+|name|string|null: false|
 
 ### Association 
 - has_many :song_discs
