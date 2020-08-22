@@ -6,7 +6,5 @@ Rails.application.routes.draw do
   resources :songs, only: [:new, :create, :destroy] do
     resources :songcolors, only: [:index, :new, :create]
   end
-  resources :discs,only: [:create, :destroy]do
-    resources :song_discs,only: [:create, :destroy]
-  end
+  resources :discs,only: [:create, :destroy]
 end
