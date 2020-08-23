@@ -1,0 +1,4 @@
+= form_with model: @disc, local: true do |f|
+  = f.text_field :name, class: "SettingGroupForm__input", placeholder: "CD名を入力してください"
+  = f.collection_check_boxes :song_ids, Song.all, :id, :name
+  = f.submit "Save", class: "SettingGroupForm__button"
