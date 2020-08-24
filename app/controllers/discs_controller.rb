@@ -26,6 +26,10 @@ class DiscsController < ApplicationController
   end
 
   def destroy
+    disc = Disc.find(params[:id])
+    disc.destroy
+
+    redirect_to root_path
   end
 
   private

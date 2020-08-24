@@ -3,3 +3,5 @@
 .SettingGroupForm
   %h1 CD編集
   = render partial: 'form', locals: { disc: @disc }
+  .under-btn
+    = link_to 'Delete', disc_path(@disc.id), method: :delete, class: "SettingGroupForm__button"
