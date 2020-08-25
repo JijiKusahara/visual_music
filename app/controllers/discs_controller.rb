@@ -1,4 +1,9 @@
 class DiscsController < ApplicationController
+
+  def index
+    @discs = Disc.all
+  end
+
   def new
     @disc = Disc.new
   end
