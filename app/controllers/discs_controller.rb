@@ -4,6 +4,10 @@ class DiscsController < ApplicationController
     @discs = Disc.all
   end
 
+  def show
+    @disc = Disc.find(params[:id])
+  end
+
   def new
     @disc = Disc.new
   end
@@ -30,6 +34,7 @@ class DiscsController < ApplicationController
     end
   end
 
+
   def destroy
     disc = Disc.find(params[:id])
     disc.destroy
@@ -37,9 +42,11 @@ class DiscsController < ApplicationController
     redirect_to root_path
   end
 
+
+
+
   private
   def disc_params
     params.require(:disc).permit(:name, song_ids: [])
   end
-
 end
