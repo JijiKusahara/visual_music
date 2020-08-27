@@ -1,0 +1,7 @@
+.SongName
+  = "「#{@disc.name}」"
+.SongsList
+  - @disc.songs.each do |song|
+    = song.name
+.EditBtn
+  = link_to "編集", edit_disc_path(@disc), class: "CdList"

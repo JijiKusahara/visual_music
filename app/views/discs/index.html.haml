@@ -1,0 +1,12 @@
+.SettingGroupForm
+  CD一覧
+  .Newlink
+    = link_to "CDの新規登録", new_disc_path, method: :get, class:"disc-btn"
+.CdList
+  - @discs.each do |disc|
+    = link_to disc_path(disc), method: :get, class: "CdList" do
+      %div.Song-name.SettingGroupForm
+        = "「#{disc.name}」"
+
+.header-other
+  = render 'songcolors/header'

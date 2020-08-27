@@ -1,7 +1,8 @@
-.header-other
-  = render 'songcolors/header'
 .SettingGroupForm
   %h1 新規CD作成
   = render partial: 'form', locals: { disc: @disc }
   .under-btn
     = link_to 'Back', root_path, class: "SettingGroupForm__button"
+
+.header-other
+  = render 'songcolors/header'

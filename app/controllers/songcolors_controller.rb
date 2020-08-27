@@ -5,7 +5,6 @@ class SongcolorsController < ApplicationController
   def index
     @songcolor = Songcolor.new
     @songcolors = Songcolor.where(song_id: @song)
-  
   end
 
   def new
