@@ -4,7 +4,7 @@ class SongcolorsController < ApplicationController
 
   def index
     @songcolor = Songcolor.new
-    @songcolors = Songcolor.where(song_id: @song)
+    @songcolors = Songcolor.where(song_id: @song).order("created_at DESC")
   end
 
   def new
