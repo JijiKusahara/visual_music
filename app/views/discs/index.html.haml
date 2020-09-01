@@ -1,12 +1,19 @@
-.SettingGroupForm
-  CD一覧
-  .Newlink
-    = link_to "CDの新規登録", new_disc_path, method: :get, class:"disc-btn"
-.CdList
-  - @discs.each do |disc|
-    = link_to disc_path(disc), method: :get, class: "CdList" do
-      %div.Song-name.SettingGroupForm
-        = "「#{disc.name}」"
+.AllMain
+  .SenterBox
+    .CategrySpace
+    .CdList
+      - @discs.each do |disc|
+        = link_to disc_path(disc), method: :get, class: "CdList" do
+          %div.Song-name
+            %div.imege
+            %div.Font
+              = "「#{disc.name}」"
+              %div.en
+                　Album/¥3,000+税
+              %div.en
+                　2019.7.24　Release(sample)
 
-.header-other
-  = render 'songcolors/header'
+  .header-other
+    = render 'songcolors/header'
+  .CreatBtn
+    = render 'makeform'
