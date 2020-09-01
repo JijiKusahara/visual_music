@@ -106,17 +106,31 @@
       width: 100%;
       height: 44px;
       margin-bottom: 20px;
-      background-color: lightblue;
+      border: 1px solid #d1d1d1;
+      border-radius: 10px;
     }
     .CdList {
       .Song-name {
         height: 214px;
-        background-color: lightblue;
+        // background-color: lightblue;
+        border: 1px solid #d1d1d1;
         margin-bottom: 2px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 30px;
         padding-right: 30px;
+        border-radius: 10px;
+        display: flex;
+        .Font {
+        }
+        .imege {
+          width: 150px;
+          height: 150px;
+          background-color: gainsboro;
+        }
+        .en {
+          font-size: small;
+        }
       }
     }
   }
