@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_21_160923) do
+ActiveRecord::Schema.define(version: 2020_09_12_095202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,10 +22,12 @@ ActiveRecord::Schema.define(version: 2020_08_21_160923) do
   end
 
   create_table "song_discs", force: :cascade do |t|
-    t.integer "song_id"
-    t.integer "disc_id"
+    t.bigint "song_id"
+    t.bigint "disc_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["disc_id"], name: "index_song_discs_on_disc_id"
+    t.index ["song_id"], name: "index_song_discs_on_song_id"
   end
 
   create_table "songcolors", force: :cascade do |t|
@@ -65,6 +67,8 @@ ActiveRecord::Schema.define(version: 2020_08_21_160923) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "song_discs", "discs"
+  add_foreign_key "song_discs", "songs"
   add_foreign_key "songcolors", "songs"
   add_foreign_key "user_songs", "songs"
   add_foreign_key "user_songs", "users"
