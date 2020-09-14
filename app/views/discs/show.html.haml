@@ -1,7 +1,15 @@
-.SongName
-  = "「#{@disc.name}」"
-.SongsList
-  - @disc.songs.each do |song|
-    = song.name
-.EditBtn
-  = link_to "編集", edit_disc_path(@disc), class: "CdList"
+.DiscShowBace
+  .DiscShowBace_box
+    .DiscShow
+      .SongName
+        = "「#{@disc.name}」"
+      .SongsList
+        - @disc.songs.each do |song|
+          = song.name
+      .EditBtn
+        = link_to "編集", edit_disc_path(@disc), class: "CdList"
+    .ListBackBtn
+      = link_to "一覧に戻る", discs_path
+
+.header-other
+  = render 'songcolors/header'
