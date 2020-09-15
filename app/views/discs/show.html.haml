@@ -1,7 +1,23 @@
-.SongName
-  = "「#{@disc.name}」"
-.SongsList
-  - @disc.songs.each do |song|
-    = song.name
-.EditBtn
-  = link_to "編集", edit_disc_path(@disc), class: "CdList"
+.DiscShowBace
+  .DiscShowBace_box
+    .DiscShow
+      .CDimage
+      .SongName
+        = "「#{@disc.name}」"
+      .Song_Days
+        .Song_Release
+          %div 2019.7.24　Release(sample)
+          %div ¥1.400＋税
+      .Song_Names
+        %div 1.　Sample-A
+        %div 2.　Sample-B
+        %div 3.　Sample-C
+        %div 4.　Sample-D
+      .EditSpace
+        .EditBtn
+          = link_to "編集", edit_disc_path(@disc), class: "cdList"
+    .ListBackBtn
+      = link_to "一覧に戻る", discs_path
+
+.header-other
+  = render 'songcolors/header'

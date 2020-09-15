@@ -1,0 +1,47 @@
+.DiscShowBace {
+  &_box {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10rem 0;
+    .DiscShow {
+      padding: 5rem;
+      border: 1px solid #d1d1d1;
+      border-radius: 10px;
+      .CDimage {
+      height: 375px;
+      width: 371px;
+      background-color: aliceblue;
+      margin: 0 auto;
+      }
+      .SongName {
+        text-align: center;
+        margin: 15px 0 0;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: .05em;
+        line-height: 1.8em;
+      }
+      .Song_Days {
+        text-align: center;
+        .Song_Release {
+        }
+        .Song_Names {
+          margin-top: 10px;
+        }
+      }
+      .EditSpace {
+        .EditBtn {
+          text-align: end;
+          margin-top: 10px;
+        }
+      }
+    }
+    .ListBackBtn {
+      padding: 1rem;
+      border: 1px solid #d1d1d1;
+      margin-top: 40px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+}
