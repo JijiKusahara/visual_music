@@ -1,13 +1,16 @@
 .DiscShowBace
   .DiscShowBace_box
     .DiscShow
+      .CDimage
       .SongName
         = "「#{@disc.name}」"
-      .SongsList
-        - @disc.songs.each do |song|
-          = song.name
-      .EditBtn
-        = link_to "編集", edit_disc_path(@disc), class: "CdList"
+      .Song_Days
+        .Song_Release
+          %div 2019.7.24　Release(sample)
+          %div ¥1.400＋税
+      .EditSpace
+        .EditBtn
+          = link_to "編集", edit_disc_path(@disc), class: "cdList"
     .ListBackBtn
       = link_to "一覧に戻る", discs_path
 
