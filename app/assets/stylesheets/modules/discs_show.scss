@@ -23,12 +23,16 @@
       }
       .Song_Days {
         text-align: center;
-        &_Release {
+        .Song_Release {
+        }
+        .Song_Names {
+          margin-top: 10px;
         }
       }
       .EditSpace {
         .EditBtn {
           text-align: end;
+          margin-top: 10px;
         }
       }
     }
