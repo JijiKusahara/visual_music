@@ -3,20 +3,20 @@
     -# %h2 10件のエラーが発生しました
     -# %ul
     -#   %li CDnameを入力してください
-  .SettingGroupForm__field
-    .SettingGroupForm__leftField
-      = f.label :name, "CDの名前", class: 'SettingGroupForm__label'
-    .SettingGroupForm__rightField
-      = f.text_field :name, class: 'SettingGroupForm__input', placeholder: 'CDの名前を入力してください'
-  .SettingGroupForm__field
-    .SettingGroupForm__leftField
-      %label.SettingGroupForm__label CDに入っている曲を選択
-    .SettingGroupForm__rightField
+  .SettingDiscForm__field
+    .SettingDiscForm__leftField
+      = f.label :name, "CDの名前", class: 'SettingDiscForm__label'
+    .SettingDiscForm__rightField
+      = f.text_field :name, class: 'SettingDiscForm__input', placeholder: 'CDの名前を入力してください'
+  .SettingDiscForm__field
+    .SettingDiscForm__leftField
+      %label.SettingDiscForm__label CDに入っている曲を選択
+    .SettingDiscForm__rightField
       / グループ作成機能の追加時はここにcollection_check_boxesの記述を入れてください
       = f.collection_check_boxes :song_ids, Song.all, :id, :name
       / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します
-  .SettingGroupForm__field
-    .SettingGroupForm__leftField
-    .SettingGroupForm__rightField
-      = f.submit class: 'SettingGroupForm__button'
+  .SettingDiscForm__field
+    .SettingDiscForm__leftField
+    .SettingDiscForm__rightField
+      = f.submit class: 'SettingDiscForm__button'
  
