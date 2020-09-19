@@ -1,11 +1,11 @@
 .DiscEditBace
   .DiscEditBace_box
     .DiscEdit
-      .SettingGroupForm
-        %h1 CD編集
+      .SettingDiscForm
+        %h1.CDedit CD編集 
         = render partial: 'form', locals: { disc: @disc }
         .under-btn
-          = link_to 'Delete', disc_path(@disc.id), method: :delete, class: "SettingGroupForm__button"
+          = link_to '削除', disc_path(@disc.id), method: :delete, class: "SettingDiscForm__button"
     .ShowBackBtn
       = link_to "戻る", disc_path
 
