@@ -7,7 +7,7 @@
     .SettingDiscForm__leftField
       = f.label :name, "CDの名前", class: 'SettingDiscForm__label'
     .SettingDiscForm__rightField
-      = f.text_field :name, class: 'SettingDiscForm__input', placeholder: 'CDの名前を入力してください'
+      = f.text_field :name, class: 'SettingDiscForm__input', placeholder: 'CDの名前を入力'
   .SettingDiscForm__field
     .SettingDiscForm__leftField
       %label.SettingDiscForm__label CDに入っている曲を選択
@@ -18,5 +18,7 @@
   .SettingDiscForm__field
     .SettingDiscForm__leftField
     .SettingDiscForm__rightField-upDateBtn
-      = f.submit "更新", class: 'SettingDiscForm__buttonUP'
- 
+      - if controller.action_name == "edit"
+        = f.submit "更新", class: 'SettingDiscForm__buttonUP'
+      -else
+        = f.submit "登録", class: 'SettingDiscForm__buttonUP'

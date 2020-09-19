@@ -1,2 +1,4 @@
 .Newlink
-  = link_to "CDの新規登録", new_disc_path, method: :get, class:"disc-btn"
+  = link_to new_disc_path, method: :get, class:"disc-btn" do
+    NewCD
+    = icon('fas', 'compact-disc',class: 'newcd_icon')
