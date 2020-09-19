@@ -18,5 +18,7 @@
   .SettingDiscForm__field
     .SettingDiscForm__leftField
     .SettingDiscForm__rightField-upDateBtn
-      = f.submit "更新", class: 'SettingDiscForm__buttonUP'
- 
+      - if controller.action_name == "edit"
+        = f.submit "更新", class: 'SettingDiscForm__buttonUP'
+      -else
+        = f.submit "登録", class: 'SettingDiscForm__buttonUP'
