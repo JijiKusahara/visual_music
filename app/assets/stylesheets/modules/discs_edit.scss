@@ -47,6 +47,13 @@ label {
   margin-right: 10px;
   margin-left: 3px;
 }
-.SettingDiscForm__button {
-  
+
+// 更新ボタン
+.SettingDiscForm__rightField-upDateBtn {
+  margin: 0 0 0 auto;
+  .SettingDiscForm__buttonUP {
+    border: none;
+    background-color: transparent;
+    color: #244765;
+  }
 }
