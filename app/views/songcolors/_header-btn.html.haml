@@ -10,9 +10,9 @@
           .colorForm
             .songName
               song name：「#{@song.name}」
-            = form_with model: [@song,@songcolor], url: {action: "create"}, html: {class: "cForm"}, local: true do |f|
+            = form_with model: [@song,@songcolor], url: {action: "create"}, html: {class: 'cForm js-form'}, local: true do |f|
               .colorForm__contents
-                = f.color_field :color, id:"colorid", name:"color", class: 'colorForm__input'
+                = f.color_field :color, id:"colorid", name:"color", class: 'colorForm__input js-form__color_field'
               = f.submit 'send', class: 'colorForm__submit'
       .nav_box__logo-field__right
         %lu.menu-box

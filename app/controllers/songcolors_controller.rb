@@ -13,15 +13,18 @@ class SongcolorsController < ApplicationController
 
   def create
     @songcolor = Songcolor.create(color: params[:color], song_id: params[:song_id])
-    redirect_to song_songcolors_path(@song)
+    respond_to do |format|
+      format.json
     # if @songcolor.save
-    #   binding.pry
-    #   redirect_to new_song_songcolor_path(@song), notice: '選択した色が保存されました'
+    #   respond_to do |format|
+    #     format.json
+    #     # format.json { render json: @songcolor}
+    #   end
     # else
     #   @songcolors = Songcolor.includes(:song)
     #   flash.now[:alert] = 'カラーピッカーで色を選択してください'
-    #   render :new
-    # end
+    #   render :index
+    end
   end
 
   
