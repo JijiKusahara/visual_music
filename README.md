@@ -81,7 +81,7 @@ Eメール／tanaka@sample.com
   
 ## 使用技術(開発環境)
   
-VSCode,HTML/CSS, Ruby, Ruby on Rails  
+VSCode,HTML/CSS, Ruby, Ruby on Rails, JavaScript, JQuery, Ajax
   
   
 # DB設計
