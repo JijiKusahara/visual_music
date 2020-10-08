@@ -28,6 +28,7 @@ $(function() {
     })
     .done(function(data){
       let html = buildHTML(data);
+      $('.colorForm__submit').prop('disabled', false) //一度押すと押せなくなる送信ボタンを連続で押せるようにしている
       // .prepend指定した要素の最初に、引数で指定した内容を追加
       $('.left-box__colors-fild').prepend(html); 
     })
