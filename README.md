@@ -58,7 +58,7 @@ Eメール／tanaka@sample.com
 ![demo](https://gyazo.com/eb4dbd2f8cf8b42721dcc7c489a2da24/raw)  
   
 ③登録した曲名をクリックし、イメージカラーを登録できる。  
-![demo](https://gyazo.com/1042f8fd85b0caffa2b0815782f922d1/raw)  
+![demo](https://gyazo.com/b9ff247ba5d383b36090ef6ea5ee80a5/raw)  
   
   
   
@@ -81,7 +81,7 @@ Eメール／tanaka@sample.com
   
 ## 使用技術(開発環境)
   
-VSCode,HTML/CSS, Ruby, Ruby on Rails  
+VSCode,HTML/CSS, Ruby, Ruby on Rails, JavaScript, JQuery, Ajax
   
   
 # DB設計
