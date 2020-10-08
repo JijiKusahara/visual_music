@@ -6,7 +6,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+# gem 'pg', '>= 0.18', '< 2.0'
 # ローカルはこれが必要上↑
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -60,9 +60,9 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
  gem 'font-awesome-sass'
  # FontAwesomeを導入
 
-#  group :production do
-#   gem 'pg'
-# end
+ group :production do
+  gem 'pg'
+end
 #本番環境にpg gemをインストールしてRailsがPostgreSQLと通信できるようにするローカルでコメントアウト
 
 gem 'devise'
